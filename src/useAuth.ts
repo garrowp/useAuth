@@ -75,10 +75,10 @@ export const useAuth: useAuthInterface = () => {
         AuthContext
     );
 
-    let redirectUri = "";
+    let postLoginPath = "";
 
-    const login = (path = "") => {
-        redirectUri = path;
+    const login = (path = "/") => {
+        postLoginPath = path;
         auth0 && auth0.authorize();
     };
 
@@ -133,6 +133,6 @@ export const useAuth: useAuthInterface = () => {
         login,
         logout,
         handleAuthentication,
-        redirectUri
+        postLoginPath
     };
 };

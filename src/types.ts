@@ -44,7 +44,7 @@ export interface useAuthInterface {
         }: {
             postLoginRoute?: string;
         }) => void;
-        redirectUri: string;
+        postLoginPath: string;
     };
 }
 

@@ -35,7 +35,7 @@ export interface useAuthInterface {
         handleAuthentication: ({ postLoginRoute }: {
             postLoginRoute?: string;
         }) => void;
-        redirectUri: string;
+        postLoginPath: string;
     };
 }
 export declare type AuthDispatch = Dispatch<AuthAction>;
