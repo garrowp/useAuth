@@ -35,6 +35,7 @@ export interface useAuthInterface {
         handleAuthentication: ({ postLoginRoute }: {
             postLoginRoute?: string;
         }) => void;
+        state: AuthState;
     };
 }
 export declare type AuthDispatch = Dispatch<AuthAction>;
