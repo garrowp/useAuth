@@ -129,6 +129,7 @@ export const useAuth: useAuthInterface = () => {
         authResult: state.authResult,
         login,
         logout,
-        handleAuthentication
+        handleAuthentication,
+        state
     };
 };

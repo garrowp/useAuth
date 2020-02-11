@@ -44,6 +44,7 @@ export interface useAuthInterface {
         }: {
             postLoginRoute?: string;
         }) => void;
+        state: AuthState;
     };
 }
 
