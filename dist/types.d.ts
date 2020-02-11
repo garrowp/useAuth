@@ -30,12 +30,12 @@ export interface useAuthInterface {
         };
         userId: string | null | undefined;
         authResult: Auth0DecodedHash | undefined | null;
-        login: () => void;
+        login: (path?: string) => void;
         logout: () => void;
         handleAuthentication: ({ postLoginRoute }: {
             postLoginRoute?: string;
         }) => void;
-        state: AuthState;
+        redirectUri: string;
     };
 }
 export declare type AuthDispatch = Dispatch<AuthAction>;

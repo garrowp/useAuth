@@ -37,14 +37,14 @@ export interface useAuthInterface {
         user: Auth0UserProfile | { sub?: string };
         userId: string | null | undefined;
         authResult: Auth0DecodedHash | undefined | null;
-        login: () => void;
+        login: (path?: string) => void;
         logout: () => void;
         handleAuthentication: ({
             postLoginRoute
         }: {
             postLoginRoute?: string;
         }) => void;
-        state: AuthState;
+        redirectUri: string;
     };
 }
 
